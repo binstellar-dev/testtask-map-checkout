@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="urn:magento:framework:Csp/etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="google-maps-host" type="host">https://maps.googleapis.com</value>
+                <value id="google-maps-gstatic" type="host">https://maps.gstatic.com</value>
+            </values>
+        </policy>
+        <policy id="img-src">
+            <values>
+                <value id="google-maps-gstatic" type="host">https://maps.gstatic.com</value>
+                <value id="google-maps-mt0" type="host">https://mt0.google.com</value>
+                <value id="google-maps-mt1" type="host">https://mt1.google.com</value>
+                <value id="google-maps-mt2" type="host">https://mt2.google.com</value>
+                <value id="google-maps-mt3" type="host">https://mt3.google.com</value>
+                <value id="google-maps-khms0" type="host">https://khms0.googleapis.com</value>
+                <value id="google-maps-khms1" type="host">https://khms1.googleapis.com</value>
+                <value id="google-maps-khms2" type="host">https://khms2.googleapis.com</value>
+                <value id="google-maps-khms3" type="host">https://khms3.googleapis.com</value>
+                <value id="google-maps-tiles" type="host">https://maps.googleapis.com</value>
+                <value id="google-maps-tiles2" type="host">https://maps.google.com</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="maps-api" type="host">https://maps.googleapis.com</value>
+                <value id="maps-gstatic" type="host">https://maps.gstatic.com</value>
+            </values>
+        </policy>
+        <policy id="style-src">
+            <values>
+                <value id="google-fonts" type="host">https://fonts.googleapis.com</value>
+            </values>
+        </policy>
+        <policy id="font-src">
+            <values>
+                <value id="google-fonts-fonts" type="host">https://fonts.gstatic.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>
