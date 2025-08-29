@@ -1,8 +1,10 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-	<type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
-		<plugin name="add-comment-field"
-				type="CustomMapDisplay\Checkout\Plugin\Magento\Checkout\LayoutProcessor"
-				sortOrder="10"/>
-	</type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="savePickupInfoToQuote" 
+        		type="CustomMapDisplay\ClickAndCollect\Plugin\Checkout\Model\ShippingInformationManagement" />
+    </type>
+    <preference for="CustomMapDisplay\ClickAndCollect\Api\Data\StoreInterface" type="CustomMapDisplay\ClickAndCollect\Model\Store" />
+    <preference for="CustomMapDisplay\ClickAndCollect\Api\StoreRepositoryInterface" type="CustomMapDisplay\ClickAndCollect\Model\StoreRepository" />
 </config>

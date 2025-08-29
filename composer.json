@@ -1,5 +1,5 @@
 {
-  "name": "custommapdisplay/module-checkout",
+  "name": "custommapdisplay/clickandcollect",
   "description": "Custom Checkout Enhancements (Google Maps) for Magento 2",
   "type": "magento2-module",
   "version": "1.0.0",

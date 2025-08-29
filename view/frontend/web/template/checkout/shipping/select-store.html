@@ -1,0 +1,37 @@
+<div data-bind="visible: isClickAndCollect()">
+    <p>
+        <a data-bind="click: showMap, visible: isSelectStoreVisible()" 
+           class="action primary"
+           href="javascript:void(0);">
+           Select store by map
+        </a>
+    </p>
+
+    <input type="hidden" id="pickup-store" name="pickup_store" value="" />
+    <p id="selected-store-msg">
+        You have selected to pick up your order in <span></span> store.
+    </p>
+
+    <div class="map-wrapper">
+        <div id="store-list">
+      <!-- Example stores -->
+           <!-- ko foreach: storesItems -->
+<div class="store-item">
+    <h5 data-bind="text: name"></h5>
+    <p data-bind="text: address"></p>
+    <button class="btn btn-warning btn-sm select-store"
+            data-bind="attr: { 
+                'data-name': name,
+                'data-address': address,
+                'data-lat': latitude,
+                'data-lng': longitude
+            }">
+        Select Point
+    </button>
+</div>
+<!-- /ko -->
+    
+        </div>
+        <div id="map-canvas"></div>
+    </div>
+</div>

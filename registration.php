@@ -1,5 +1,7 @@
 <?php
-use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'CustomMapDisplay_Checkout', __DIR__);
-
+\Magento\Framework\Component\ComponentRegistrar::register(
+    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+    'CustomMapDisplay_ClickAndCollect',
+    __DIR__
+);

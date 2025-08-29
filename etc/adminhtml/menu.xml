@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="CustomMapDisplay_ClickAndCollect::stores_section" title="Click And Collect" translate="title" module="CustomMapDisplay_ClickAndCollect" sortOrder="40" parent="Magento_Backend::content" resource="CustomMapDisplay_ClickAndCollect::stores_section"/>
+    	<add id="CustomMapDisplay_ClickAndCollect::manage_stores" title="Manage Stores" module="CustomMapDisplay_ClickAndCollect" sortOrder="50" parent="CustomMapDisplay_ClickAndCollect::stores_section" action="clickandcollectstore/index" resource="CustomMapDisplay_ClickAndCollect::manage_stores"/>
+    </menu>
+</config>

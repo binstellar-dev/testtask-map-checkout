@@ -1,0 +1,85 @@
+.mc_cac_map .modal-inner-wrap { position: relative; }
+.mc_cac_map .modal-header { display: none; }
+.mc_cac_map .modal-content { padding: 0 0 0 0; }
+.mc_cac_map .modal-content #map-canvas { position: absolute; top: 0; right: 0; bottom: 0; left: 0;left: 0; }
+#pickup-date { width: 350px; }
+#selected-store-msg { display: none; margin-top: 20px;}
+#selected-store-msg span { font-weight: bold; }
+.map-wrapper {
+    display: none;
+}
+
+/* Store list (left side) */
+#store-list {
+    flex: 0 0 30%;
+    overflow-y: auto;
+    background: #fffbe6;
+    border: 2px solid #f4d03f;
+    padding: 10px;
+    border-radius: 5px;
+}
+#store-list .store-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+#store-list .store-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+#store-list .store-item p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+#store-list button {
+    background: #f1c40f;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Map (right side) */
+#map-canvas {
+    flex: 1;
+    height: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Magento modal overrides */
+.modal-popup .modal-inner-wrap {
+    width: 95% !important;
+    max-width: 1200px !important;
+    height: 80vh !important;
+}
+
+.modal-popup .map-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 500px !important;
+    gap: 15px !important;
+    padding: 20px !important;
+}
+
+.modal-popup #store-list {
+    flex: 0 0 30% !important;
+    overflow-y: auto !important;
+    background: #fffbe6 !important;
+    border: 2px solid #f4d03f !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+}
+
+.modal-popup #map-canvas {
+    flex: 1 !important;
+    height: 100% !important;
+    border: 2px solid #ddd !important;
+    border-radius: 5px !important;
+    z-index: 1 !important;
+}
